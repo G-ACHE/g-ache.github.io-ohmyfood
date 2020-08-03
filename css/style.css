@@ -1,0 +1,653 @@
+/* Mise en forme page d'accueil */
+header a {
+  font-size: 2rem;
+  color: #fbc138;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background: #579C87;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  display: block;
+  font-size: 2.2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: #579C87;
+  font-size: 2rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+footer a {
+  margin: 2rem;
+  text-decoration: none;
+  color: #fbc138;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 33vw 33vw;
+  grid-column-gap: 5vw;
+  grid-row-gap: 30px;
+  grid-auto-rows: 80vh 80vh;
+  padding: 50px 180px;
+}
+
+article {
+  display: block;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu__note {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  box-sizing: border-box;
+  background-color: #f7e0dc;
+  font-family: "Devonshire", cursive;
+  font-size: 1.5em;
+  box-shadow: 1px 1px 6px grey;
+  color: black;
+}
+.menu__chic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  box-sizing: border-box;
+  background-color: #fdf5fd;
+  font-family: "Croissant One", cursive;
+  font-size: 1.5em;
+  box-shadow: 1px 1px 6px grey;
+}
+.menu__delice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5em;
+  box-shadow: 1px 1px 6px grey;
+}
+.menu__palette {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  box-sizing: border-box;
+  background-color: #fdfffd;
+  font-family: "handlee", cursive;
+  font-size: 1.5em;
+  box-shadow: 1px 1px 6px grey;
+}
+
+.menu__note h3 {
+  color: black;
+  font: italic 2em "handlee", cursive;
+}
+
+.menu__chic h3 {
+  color: #BC772F;
+  font: 2em "Times New Roman", Times, serif;
+}
+
+.menu__delice h3 {
+  color: #388AF3;
+  font: italic 2em "handlee", cursive;
+}
+
+.menu__palette h3 {
+  color: #84BC63;
+  font: italic 2em "handlee", cursive;
+}
+
+h2, h3, h4 {
+  text-align: center;
+}
+
+a:hover > div > h3, a:hover > div > h2, a:hover > div > .fa-music {
+  transform: scale(1.5);
+  opacity: 0.7;
+  transition: 500ms;
+}
+
+footer a:hover {
+  -webkit-animation: 0.2s wiggle ease infinite;
+  animation: 0.2s wiggle ease infinite;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+.point1 {
+  -webkit-animation: 2s progress ease infinite;
+  animation: 2s progress ease infinite;
+}
+
+@-webkit-keyframes progress {
+  0% {
+    color: #579C87;
+  }
+  100% {
+    color: #fbc138;
+  }
+}
+@keyframes progress {
+  0% {
+    color: #579C87;
+  }
+  100% {
+    color: #fbc138;
+  }
+}
+.point2 {
+  -webkit-animation: 2s progress ease infinite;
+  animation: 2s progress ease infinite;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+@keyframes progress {
+  0% {
+    color: #579C87;
+  }
+  100% {
+    color: #fbc138;
+  }
+}
+.point3 {
+  -webkit-animation: 2s progress ease infinite;
+  animation: 2s progress ease infinite;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+@keyframes progress {
+  0% {
+    color: #579C87;
+  }
+  100% {
+    color: #fbc138;
+  }
+}
+.menu__note h3 {
+  font-family: "handlee", cursive;
+}
+.menu__delice h3 {
+  font-family: "handlee", cursive;
+}
+.menu__palette h3 {
+  font-family: "handlee", cursive;
+}
+
+.menu__chic h3 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.soon {
+  background-color: #579C87;
+  color: #fbc138;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.3em 1.5em;
+  border-radius: 0.5em;
+  margin: 0.5em auto 4em auto;
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+}
+
+.fa-music {
+  text-align: center;
+  background-image: linear-gradient(to right, #E06265, #EA9372);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu__chic h2 {
+  background: linear-gradient(to right, #BC772F, #8763F4);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu__delice h2 {
+  background: linear-gradient(to right, #3B61DD, #388AF3);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu__palette h2 {
+  background: linear-gradient(to right, #599448, #CDFC8E);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Mise en forme menus */
+.menus {
+  padding: 50px 35px;
+}
+
+.position_carte {
+  background-color: #f7e0dc;
+  box-shadow: 1px 1px 6px grey;
+  padding: 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 5em 5em;
+}
+
+#lechicalafrancaise .position_carte {
+  background-color: #fdf5fd;
+  box-shadow: 1px 1px 6px grey;
+  padding: 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 5em 5em;
+}
+
+#lapalettedugout .position_carte {
+  background-color: #fdfffd;
+  box-shadow: 1px 1px 6px grey;
+  padding: 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 5em 5em;
+}
+
+#ledelicedespapilles .position_carte {
+  background-color: #f9f9f9;
+  box-shadow: 1px 1px 6px grey;
+  padding: 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 5em 5em;
+}
+
+.position_carte h3 {
+  color: black;
+  font: 3rem "devonshire", cursive;
+}
+
+#lechicalafrancaise .position_carte .appetit, .liste_appetit {
+  color: #BC772F;
+}
+
+#lechicalafrancaise .position_carte .papilles, .liste_papilles {
+  color: #986993;
+}
+
+#lechicalafrancaise .position_carte .gourmandises, .liste_gourmandises {
+  color: #6752C6;
+}
+
+#lechicalafrancaise .position_carte h4 {
+  font: 1.5em "Times New Roman", Times, serif;
+}
+
+h4 {
+  font: italic 1.5em "handlee";
+}
+
+li {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  margin-right: 10%;
+  margin-left: 5%;
+  font: italic 1em "handlee";
+}
+
+#lechicalafrancaise li {
+  font: 1em "Times New Roman", Times, serif;
+}
+
+.prix {
+  font: 25px "devonshire", cursive;
+}
+
+#lanoteenchantee h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#lanoteenchantee h4::before, #lanoteenchantee h4::after {
+  height: 5px;
+  width: 30%;
+  background: black;
+  content: "";
+}
+
+#lechicalafrancaise .appetit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#lechicalafrancaise .appetit::before, #lechicalafrancaise .appetit::after {
+  height: 5px;
+  width: 20%;
+  background: #BC772F;
+  content: "";
+}
+
+#ledelicedespapilles .commencer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#ledelicedespapilles .commencer::before, #ledelicedespapilles .commencer::after {
+  height: 5px;
+  width: 24%;
+  background: #0032D4;
+  content: "";
+}
+
+#lechicalafrancaise .papilles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#lechicalafrancaise .papilles::before, #lechicalafrancaise .papilles::after {
+  height: 5px;
+  width: 26%;
+  background: #986993;
+  content: "";
+}
+
+#ledelicedespapilles .continuer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#ledelicedespapilles .continuer::before, #ledelicedespapilles .continuer::after {
+  height: 5px;
+  width: 26%;
+  background: #2972EB;
+  content: "";
+}
+
+#lechicalafrancaise .gourmandises {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#lechicalafrancaise .gourmandises::before, #lechicalafrancaise .gourmandises::after {
+  height: 5px;
+  width: 22%;
+  background: #6752C6;
+  content: "";
+}
+
+#ledelicedespapilles .terminer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#ledelicedespapilles .terminer::before, #ledelicedespapilles .terminer::after {
+  height: 5px;
+  width: 26%;
+  background: #489DF2;
+  content: "";
+}
+
+#lapalettedugout h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#lapalettedugout h4::before, #lapalettedugout h4::after {
+  height: 5px;
+  width: 28%;
+  background: linear-gradient(to right, #599448, #CDFC8E);
+  content: "";
+}
+#lapalettedugout h4::after {
+  background: linear-gradient(to left, #599448, #CDFC8E);
+}
+
+.titre_chic h3 {
+  background: linear-gradient(to right, #BC772F, #8763F4);
+  -webkit-background-clip: text;
+  color: transparent;
+  font: 3rem "Times New Roman", Times, serif;
+}
+
+.titre_delice h3 {
+  background: linear-gradient(to right, #3B61DD, #388AF3);
+  -webkit-background-clip: text;
+  color: transparent;
+  font: italic 2em "handlee", cursive;
+}
+
+.titre_palette h3 {
+  background: linear-gradient(to right, #599448, #CDFC8E);
+  -webkit-background-clip: text;
+  color: transparent;
+  font: italic 2em "handlee", cursive;
+}
+
+.note {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 15rem;
+  margin-left: 15rem;
+}
+
+.titre_menu {
+  font-size: 3rem;
+}
+
+.menus h4 span::after {
+  width: 0;
+  height: 2px;
+  background: black;
+  content: "";
+  display: block;
+  transition: width 1s;
+}
+
+.menus h4 span:hover::after {
+  width: 100%;
+}
+
+.menus .appetit span::after {
+  width: 0;
+  height: 2px;
+  background: #BC772F;
+  content: "";
+  display: block;
+  transition: width 1s;
+}
+
+.menus .appetit span:hover::after {
+  width: 100%;
+}
+
+.menus .papilles span::after {
+  width: 0;
+  height: 2px;
+  background: #986993;
+  content: "";
+  display: block;
+  transition: width 1s;
+}
+
+.menus .papilles span:hover::after {
+  width: 100%;
+}
+
+.menus .gourmandises span::after {
+  width: 0;
+  height: 2px;
+  background: #6752C6;
+  content: "";
+  display: block;
+  transition: width 1s;
+}
+
+.menus .gourmandises span:hover::after {
+  width: 100%;
+}
+
+/* Mise en forme responsive */
+@media all and (max-width: 1112px) {
+  .position_carte, #lapalettedugout .position_carte, #lechicalafrancaise .position_carte, #ledelicedespapilles .position_carte {
+    margin: auto;
+  }
+
+  li p {
+    text-align: left;
+  }
+}
+@media all and (max-width: 790px) {
+  .soon {
+    margin-bottom: 250px;
+  }
+
+  section {
+    grid-template-columns: auto;
+    padding: 15px 15px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menus {
+    width: auto;
+    display: flex;
+  }
+
+  .position_carte, li, .note, .prix, h4, #lechicalafrancaise .position_carte, #ledelicedespapilles .position_carte, #lapalettedugout .position_carte {
+    flex-direction: column;
+    margin: 0rem;
+  }
+
+  ul, .liste_appetit, .liste_papilles, .liste_gourmandises {
+    padding-left: 1px;
+  }
+
+  li p {
+    margin-bottom: 0;
+  }
+
+  .prix {
+    font-size: 130%;
+  }
+
+  .position_carte, #lechicalafrancaise .position_carte, #ledelicedespapilles .position_carte, #lapalettedugout .position_carte {
+    font-size: 100%;
+  }
+
+  #lanoteenchantee h4, #lapalettedugout h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #lanoteenchantee h4::before, #lanoteenchantee h4::after, #lapalettedugout h4::before, #lapalettedugout h4::after {
+    height: 5px;
+    width: 45%;
+    background: transparent;
+    content: "";
+  }
+
+  #lanoteenchantee h4 {
+    font-size: 140%;
+  }
+
+  #lapalettedugout h4 {
+    color: #84BC63;
+    font-size: 128%;
+  }
+
+  #ledelicedespapilles h4 {
+    color: #388AF3;
+  }
+
+  #lechicalafrancaise .gourmandises, #lechicalafrancaise .papilles, #lechicalafrancaise .appetit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #lechicalafrancaise .gourmandises::before, #lechicalafrancaise .gourmandises::after, #lechicalafrancaise .papilles::before, #lechicalafrancaise .papilles::after, #lechicalafrancaise .appetit::before, #lechicalafrancaise .appetit::after {
+    height: 5px;
+    width: 0%;
+    background: transparent;
+    content: "";
+  }
+
+  #lechicalafrancaise .position_carte h4 {
+    font-size: 100%;
+  }
+
+  #ledelicedespapilles .commencer, #ledelicedespapilles .continuer, #ledelicedespapilles .terminer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 109%;
+  }
+  #ledelicedespapilles .commencer::before, #ledelicedespapilles .commencer::after, #ledelicedespapilles .continuer::before, #ledelicedespapilles .continuer::after, #ledelicedespapilles .terminer::before, #ledelicedespapilles .terminer::after {
+    height: 5px;
+    width: 0%;
+    background: transparent;
+    content: "";
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
