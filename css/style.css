@@ -50,7 +50,7 @@ section {
   grid-column-gap: 5vw;
   grid-row-gap: 30px;
   grid-auto-rows: 80vh 80vh;
-  padding: 50px 180px;
+  padding: 50px 195px;
 }
 
 article {
@@ -141,7 +141,7 @@ h2, h3, h4 {
 }
 
 a:hover > div > h3, a:hover > div > h2, a:hover > div > .fa-music {
-  transform: scale(1.5);
+  transform: scale(1.4);
   opacity: 0.7;
   transition: 500ms;
 }
@@ -543,21 +543,53 @@ li {
 /* Mise en forme responsive */
 @media all and (max-width: 1112px) {
   .position_carte, #lapalettedugout .position_carte, #lechicalafrancaise .position_carte, #ledelicedespapilles .position_carte {
-    margin: auto;
+    margin: 0 0 5em;
   }
 
   li p {
-    text-align: left;
+    text-align: center;
+  }
+
+  section {
+    padding: 30px 145px;
   }
 }
 @media all and (max-width: 790px) {
+  .fa-music {
+    padding-top: 50px;
+    font-size: 3em;
+  }
+
   .soon {
     margin-bottom: 250px;
+    padding: 15px 15px;
   }
 
   section {
     grid-template-columns: auto;
     padding: 15px 15px;
+    margin-bottom: 250px;
+  }
+
+  .titre_menu {
+    font-size: 2rem;
+  }
+
+  .titre_palette h3 {
+    font-size: 2.1em;
+  }
+
+  #lapalettedugout h4 span::after {
+    width: 0;
+    height: 2px;
+    background: #84BC63;
+    content: "";
+    display: block;
+    transition: width 1s;
+  }
+
+  #lapalettedugout h4 span:hover::after {
+    width: 100%;
   }
 
   h1 {
@@ -587,12 +619,19 @@ li {
     margin-bottom: 0;
   }
 
+  .note h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .prix {
     font-size: 130%;
   }
 
   .position_carte, #lechicalafrancaise .position_carte, #ledelicedespapilles .position_carte, #lapalettedugout .position_carte {
     font-size: 100%;
+    margin-bottom: 200px;
+    padding: 0;
   }
 
   #lanoteenchantee h4, #lapalettedugout h4 {
@@ -633,7 +672,7 @@ li {
   }
 
   #lechicalafrancaise .position_carte h4 {
-    font-size: 100%;
+    font-size: 2;
   }
 
   #ledelicedespapilles .commencer, #ledelicedespapilles .continuer, #ledelicedespapilles .terminer {
@@ -647,6 +686,45 @@ li {
     width: 0%;
     background: transparent;
     content: "";
+  }
+
+  .menus .commencer span::after {
+    width: 0;
+    height: 2px;
+    background: #388AF3;
+    content: "";
+    display: block;
+    transition: width 1s;
+  }
+
+  .menus .commencer span:hover::after {
+    width: 100%;
+  }
+
+  .menus .continuer span::after {
+    width: 0;
+    height: 2px;
+    background: #388AF3;
+    content: "";
+    display: block;
+    transition: width 1s;
+  }
+
+  .menus .continuer span:hover::after {
+    width: 100%;
+  }
+
+  .menus .terminer span::after {
+    width: 0;
+    height: 2px;
+    background: #388AF3;
+    content: "";
+    display: block;
+    transition: width 1s;
+  }
+
+  .menus .terminer span:hover::after {
+    width: 100%;
   }
 }
 
