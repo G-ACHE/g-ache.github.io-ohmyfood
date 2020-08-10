@@ -46,11 +46,12 @@ body {
 
 section {
   display: grid;
-  grid-template-columns: 33vw 33vw;
+  grid-template-columns: 40vw 40vw;
   grid-column-gap: 5vw;
   grid-row-gap: 30px;
   grid-auto-rows: 60vh 60vh;
-  padding: 50px 195px;
+  padding: 50px auto;
+  justify-content: center;
 }
 
 article {
@@ -86,6 +87,9 @@ a {
   font-family: "Croissant One", cursive;
   font-size: 1.5em;
   box-shadow: 1px 1px 6px grey;
+}
+.menu__chic h2 {
+  font-size: 28px;
 }
 .menu__delice {
   display: flex;
@@ -137,7 +141,7 @@ h2, h3, h4 {
 }
 
 a:hover > div > h3, a:hover > div > h2, a:hover > div > .fa-music {
-  transform: scale(1.4);
+  transform: scale(1.2);
   opacity: 0.7;
   transition: 500ms;
 }
@@ -547,7 +551,12 @@ li {
   }
 
   section {
-    padding: 30px 145px;
+    padding: 30px auto;
+  }
+}
+@media all and (min-widht: 975px) and (max-width: 1855px) {
+  .menu__chic h2 {
+    font-size: 20px;
   }
 }
 @media all and (max-width: 790px) {
