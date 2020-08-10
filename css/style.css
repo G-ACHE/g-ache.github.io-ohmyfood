@@ -49,7 +49,7 @@ section {
   grid-template-columns: 33vw 33vw;
   grid-column-gap: 5vw;
   grid-row-gap: 30px;
-  grid-auto-rows: 80vh 80vh;
+  grid-auto-rows: 60vh 60vh;
   padding: 50px 195px;
 }
 
@@ -68,7 +68,6 @@ a {
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 3rem;
   box-sizing: border-box;
   background-color: #f7e0dc;
   font-family: "Devonshire", cursive;
@@ -82,7 +81,6 @@ a {
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 3rem;
   box-sizing: border-box;
   background-color: #fdf5fd;
   font-family: "Croissant One", cursive;
@@ -95,7 +93,6 @@ a {
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 3rem;
   box-sizing: border-box;
   background-color: #f9f9f9;
   font-family: "Dancing Script", cursive;
@@ -108,7 +105,6 @@ a {
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 3rem;
   box-sizing: border-box;
   background-color: #fdfffd;
   font-family: "handlee", cursive;
@@ -603,7 +599,6 @@ li {
 
   .menus {
     width: auto;
-    display: flex;
   }
 
   .position_carte, li, .note, .prix, h4, #lechicalafrancaise .position_carte, #ledelicedespapilles .position_carte, #lapalettedugout .position_carte {
